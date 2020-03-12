@@ -17,7 +17,7 @@ def statistics(mass, k):
         return mass[0]
     else:
         sup_index = search_sup_index(mass)
-        if k - 1 == sup_index:
+        if k == sup_index:
             return mass[sup_index]
         elif k > sup_index:
             return statistics(mass[sup_index + 1::], k - sup_index - 1)
@@ -29,4 +29,4 @@ fout = open ('output.txt', 'w')
 k = [int(i) for i in fin.readline().split()]
 mass = [int(i) for i in fin.read().split()]
 
-fout.write(str(statistics(mass, k[1])).replace('[', '').replace(']', '').replace(',', ''))
+fout.write(str(statistics(mass, k[1] - 1)).replace('[', '').replace(']', '').replace(',', ''))
