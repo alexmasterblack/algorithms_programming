@@ -29,4 +29,4 @@ fout = open ('output.txt', 'w')
 k = [int(i) for i in fin.readline().split()]
 mass = [int(i) for i in fin.read().split()]
 
-fout.write(str(statistics(mass, k[1] - 1)).replace('[', '').replace(']', '').replace(',', ''))
+fout.write(str(statistics(mass, k[1] - 1)))
