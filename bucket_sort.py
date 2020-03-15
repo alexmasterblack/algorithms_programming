@@ -24,8 +24,6 @@ def bucket_sort(mass_words, n):
         
         return bucket_sort(new_sorted_mass, n - 1)
 
-
-
 fin = open ('input.txt', 'r')            
 fout = open ('output.txt', 'w')
 
