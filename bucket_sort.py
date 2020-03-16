@@ -12,9 +12,7 @@ def bucket_sort(mass_words, n):
         
         for i in range(len(mass_words)):
             letter = mass_words[i]
-            for j in range(len(support_mass)):
-                if ord(letter[n]) == j:
-                    support_mass[j].extend(letter)
+            support_mass[ord(letter[n])].extend(letter)
 
         sorted_mass = merge_mass([i for i in support_mass if i != []])
         
