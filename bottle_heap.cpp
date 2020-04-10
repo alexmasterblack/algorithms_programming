@@ -34,6 +34,7 @@ class heap {
     }
 
 public:
+    
     void add_to_heap(int element) {
         heap_list.push_back(element);
         size_heap++;
@@ -66,7 +67,7 @@ int main() {
 
     heap thirst;
 
-    long long sup_elem;
+    int sup_elem;
     for (int i = 0; i < n; i++) {
         fin >> sup_elem;
         thirst.add_to_heap(sup_elem);
