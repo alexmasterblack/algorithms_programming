@@ -94,8 +94,8 @@ int main() {
         heap_line.add_to_heap(make_pair(first_min + second_min, n));
     }
 
-    vector<value_index> lol = heap_line.out();
-    sort(lol.begin(), lol.end(), comp);
-    for (auto i = lol.begin(); i != lol.end(); i++)
+    vector<value_index> finally = heap_line.out();
+    sort(finally.begin(), finally.end(), comp);
+    for (auto i = finally.begin(); i != finally.end(); i++)
         fout << i->first << " ";
 }
